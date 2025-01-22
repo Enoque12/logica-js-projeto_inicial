@@ -1,23 +1,31 @@
-alert("Bem vindo ao jogo do numero sorteiado!!");
-let numeroSecreto = 4;
-console.log(numeroSecreto);
+alert("Desafio Sobre a estrutura de repeticao While");
+let contador = 1;
 
-let chute;
-let tentativas = 1;
+//Desafio 1
+while (contador <= 10) {
+  alert(contador);
+  contador++;
+}
 
-while (chute != numeroSecreto) {
-  chute = prompt("Escolha um numero entre 1 a 10");
+// Desafio 2
+contador = 10;
 
-  if (chute == numeroSecreto) {
-    alert(
-      `Isso mesmo!!Voce acertou o numero Secreto e de facto ${numeroSecreto} e voce tentou ${tentativas}`
-    );
-  } else {
-    if (chute > numeroSecreto) {
-      alert(`O numero secreto e menor que ${chute}`);
-    } else {
-      alert(`O numero Secreto e maior que ${chute}`);
-    }
-  }
-  tentativas++;
+while (contador >= 0) {
+  alert(contador);
+  contador--;
+}
+
+//Desafio 3
+contador = prompt("Digite um numero!");
+while (contador >= 0) {
+  console.log(contador);
+  contador--;
+}
+
+//Desafio 4
+let aux = 1;
+contador = prompt("Digite um numero!");
+while (aux <= contador) {
+  console.log(aux);
+  aux++;
 }
